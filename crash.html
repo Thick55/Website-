@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Welcome</title>
+      <style>
+         body{
+            background-color: #f4f4f4;
+            font-family:  verdana;
+            font-weight: normal;
+            line-height: 1.5em;
+         }
+          
+         .box-1 h1{
+            color:green;
+            font-family: tahoma;
+            text-transform: uppercase;
+            font-style: italic;
+
+         }
+         .box-1{
+            background-color: #333;
+            color:white;
+            border: 2px red solid;
+            border-bottom: 5px red solid;
+            padding:20px;
+            margin: 20px 0;
+         }
+         .contain,.container{
+            width: 70%;
+            margin:auto;
+            
+         }
+         .box-2{
+            border: 2px red dotted;
+            padding:20px;
+            margin:20px 0;
+         }
+         .box-2 h1{
+            text-transform: uppercase;
+         }
+        
+         .category{
+            border: 1px #ccc solid;
+            padding: 10px;
+            border-radius: 15px;
+         }
+         .category ul{
+            list-style: none;
+            padding:0px;
+            
+         }
+         .category li{
+            padding-bottom: 8px;
+            border-bottom: dotted 1px #333;
+            border-top: dotted 1px;
+            
+         }
+         .category h2{
+            text-align: center;
+         }
+         a {
+            text-decoration: none;
+            color:#000;
+         }
+         a:visited{
+            color: black;
+         }
+         a:hover{
+            color:#2516f7;
+            font-size: 20px;
+         }
+         .form-wrapper{
+            padding: 20px;
+         }
+         .form-group{
+            padding-bottom: 15px;
+         }
+         .form-wrapper label{
+            display:block;
+         }
+         .form-wrapper input[type="text"], textarea{
+            padding:8px;
+            width:100%
+         }
+         .button{
+            background-color: #333;
+            color:white;
+            padding: 10px 15px;
+            border:none;
+         }
+         .button:hover{
+            background-color: rgb(0, 119, 255);
+            color: white;
+         }
+         .product{
+            float: left;
+            border: 2px black solid;
+            padding: 10px 20px;
+         }
+         .mtn,.telecel,.airteltigo{
+            border: #333 solid;
+             width:15%;
+            padding:20px;
+            text-align: center;
+            border-top: 8px;
+            border-bottom: 8px;
+            border-right: 10px;
+            background-color: #333;
+            color: #fff;
+            font-size: 18px;
+            font-style: bold;
+            margin: 5px;
+            float: left;
+            
+            
+         }
+         .products{
+            box-sizing: border-box;
+            
+         }
+         .contain{
+            background-image: url(Thumbnail/Safety\ Info.png);
+          
+         }
+         /* New Nav Bar */
+         details{
+            width:220px;
+            height:300px;
+            border:1px solid #000;
+
+         }
+         details:not([open]){
+            width:80px;
+         }
+         summary{
+            background-color: #dadada;
+            text-align:right;
+         }
+         details li{
+            list-style: none;
+            font-weight:bold;
+            text-align: center;
+         }
+
+         
+      </style>
+   </head>
+   <body>
+      <details>
+         <summary>&#9776;</summary>
+         <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Servces</li>
+            <li>Contact</li>
+         </ul>
+      </details><hr>
+      <h1>Homepage</h1>
+      <div>
+         <a href="crash.html">Home</a>
+         <a href="Contact.html">Contact</a>
+      </div>
+      <div class="container">
+         <div class="box-1">
+            <h1>Hi there</h1>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe facere, reprehenderit porro maiores explicabo tempore illum modi id suscipit nisi! Quia laborum, delectus vel rem aut expedita ad odit!
+            </p>
+         </div>
+      </div>
+
+       <div class="contain">
+         <div class="box-2">
+            <h1>Good one there</h1>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis saepe facere, reprehenderit porro maiores explicabo tempore illum modi id suscipit nisi! Quia laborum, delectus vel rem aut expedita ad odit!
+            </p>
+         </div>
+      </div>
+
+      <div class="container">
+         <div class="category">
+            <h2>Categories</h2>
+            <p>
+               <ul>
+                  <li><a href="#">Category 1</a></li>
+                  <li><a href="#">Category 2</a></li>
+                  <li><a href="#">Category 3</a></li>
+                  <li><a href="#">Category 4</a></li>
+                  <li><a href="website.html">Category 5</a></li>
+                 <li><a href="#">Category 6</a></li>
+               </ul>
+            </p>
+         </div>
+
+         <form class="form-wrapper">
+            <legend>The User Form 
+               <div class="form-group">
+                  <label>Name</label>
+                   <input type="text" placeholder="fullName">
+               </div>
+            </legend>
+            <legend> The User Valid Email
+               <div class="form-group">
+                  <label>Email</label>
+                  <input type="text" placeholder="Email">
+               </div>
+            </legend>
+            <legend>Gender
+               <select>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+               </select>
+            </legend>
+            <legend> Input your message here
+               <div class="form-group">
+                  <label>Message</label>
+                  <textarea name="message"></textarea>
+               </div>
+            </legend>
+            <input class="button" type="submit" value="submit" name="">
+         </form>
+      </div>
+      <div class="products">
+            <div class="mtn">
+               MTN Bundles
+            </div>
+            <div class="telecel">
+               Telecel Bundle
+            </div>
+            <div class="airteltigo">
+               AirtelTigo Bundle
+            </div>
+      </div>
+      <div style="width:600px;  height: 100dvh;"></div>
+    </body>
+</html>
