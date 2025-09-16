@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+   <head lang="en">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <meta name="description" content="A web design course for beginners">
+      <meta name="keywords" content="Affodable Web Design,Web Design Professional Web Design">
+      <meta name="author" content="Thick Tea">
+      <title>Contact Us</title>
+      <link rel="stylesheet" href="style.css">
+      <style>
+         .page-title {
+            color: #fff;
+         }
+         #newsletter {
+            color: #fff;
+         }
+         body {
+            background: url('Thumbnail/Laptop.jpg') no-repeat center center fixed;
+            background-size: cover;
+         }
+        
+         /* Contact form styles from previous version */
+         .forms-wrapper{
+           padding: 15px;
+           margin: 5% 44px ;
+           opacity: 0;
+           transform: translateY(40px);
+           animation: fadeInUp 1s ease-out forwards;
+         }
+         @keyframes fadeInUp {
+            to {
+             opacity: 1;
+             transform: translateY(360deg);
+            }
+         }
+             .forms-wrapper label{
+                display: block;
+                font-family: verdana;
+                font-style: italic;
+                font-weight: bold;
+                padding-bottom: 8px;
+                font-size: 24px;
+                color: #fff;
+             }
+         .forms{
+            padding-bottom: 15px;
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+         }
+         .forms:nth-child(1) { animation-delay: 0.3s; }
+         .forms:nth-child(2) { animation-delay: 0.5s; }
+         .forms:nth-child(3) { animation-delay: 0.7s; }
+         .forms:nth-child(4) { animation-delay: 0.9s; }
+         @keyframes fadeIn {
+           to { opacity: 1; }
+         }
+         .forms-wrapper input[type="text"], textarea{
+            padding: 8px;
+            width: 80%;
+            transition: box-shadow 0.3s;
+         }
+         .forms-wrapper textarea {
+            min-height: 80px;
+            resize: vertical;
+         }
+         .forms-wrapper input[type="text"]:focus, textarea:focus{
+            box-shadow: 0 0 8px #39a8f1;
+         }
+         .button{
+            height: 25px;
+            background: #e8491d;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+         }
+         .button:hover{
+            background-color: #354;
+            color: #fff;
+         }
+         .forms-wrapper ::placeholder{
+           font-size: 20px;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <div class="wrapper">
+            <div id="branding">
+               <h1><span class="highlight">Thick</span> Web Design</h1>
+            </div>
+            <nav>
+               <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li class="current"><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+
+      <section id="newsletter">
+         <div class="wrapper">
+            <h1>Subscribe to our Newsletter</h1>
+            <form>
+               <input type="email" placeholder="Enter your email...">
+               <button type="submit" class="button_1">Subscribe</button>
+            </form>
+         </div>
+      </section>
+
+      <section id="main">
+         <div class="wrapper">
+            <article id="main-col">
+               <h1 class="page-title">Contact Us</h1>
+               <form class="forms-wrapper" action="#" method="post">
+                  <div class="forms">
+                     <label for="name">Full Name</label>
+                     <input type="text" id="name" name="name" placeholder="Full name">
+                  </div>
+                  <div class="forms">
+                     <label for="email">Email</label>
+                     <input type="text" id="email" name="email" placeholder="Email">
+                  </div>
+                  <div class="forms">
+                     <label for="number">Phone Number</label>
+                     <input type="text" id="number" name="number" placeholder="Your phone number">
+                  </div>
+                  <div class="forms">
+                     <label for="message">Message</label>
+                     <textarea id="message" name="message" placeholder="Your message here"></textarea>
+                  </div>
+                  <input class="button" type="submit" value="Submit">
+               </form>
+            </article>
+            <aside id="sidebar">
+               <div class="dark">
+                  <h3>Contact Info</h3>
+                  <p>Email: info@thicktea.com<br>Phone: 123-456-7890</p>
+               </div>
+            </aside>
+         </div>
+      </section>
+
+      <footer>
+         <p>Thick Tea Copyright &copy; 2025</p>
+      </footer>
+   </body>
+</html>
